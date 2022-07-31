@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		8E11D44D28955B0700020411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D44C28955B0700020411 /* AppDelegate.swift */; };
 		8E11D44F28955B0700020411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D44E28955B0700020411 /* SceneDelegate.swift */; };
-		8E11D45128955B0700020411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D45028955B0700020411 /* ViewController.swift */; };
 		8E11D45428955B0700020411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E11D45228955B0700020411 /* Main.storyboard */; };
 		8E11D45728955B0700020411 /* frist_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D45528955B0700020411 /* frist_project.xcdatamodeld */; };
 		8E11D45928955B0C00020411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E11D45828955B0C00020411 /* Assets.xcassets */; };
 		8E11D45C28955B0C00020411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E11D45A28955B0C00020411 /* LaunchScreen.storyboard */; };
+		8E11D46528956BE900020411 /* GredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D46428956BE900020411 /* GredientView.swift */; };
+		8E11D468289588E500020411 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D467289588E500020411 /* SplashViewController.swift */; };
+		8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D4692895CD7600020411 /* facebookBtn.swift */; };
+		8E11D46C2895D60200020411 /* textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D46B2895D60100020411 /* textfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E11D44928955B0700020411 /* frist-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "frist-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E11D44C28955B0700020411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E11D44E28955B0700020411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E11D45028955B0700020411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E11D45328955B0700020411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E11D45628955B0700020411 /* frist_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = frist_project.xcdatamodel; sourceTree = "<group>"; };
 		8E11D45828955B0C00020411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E11D45B28955B0C00020411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E11D45D28955B0C00020411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E11D46428956BE900020411 /* GredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GredientView.swift; sourceTree = "<group>"; };
+		8E11D467289588E500020411 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8E11D4692895CD7600020411 /* facebookBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookBtn.swift; sourceTree = "<group>"; };
+		8E11D46B2895D60100020411 /* textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,10 @@
 		8E11D44B28955B0700020411 /* frist-project */ = {
 			isa = PBXGroup;
 			children = (
+				8E11D4662895889500020411 /* Controllers */,
+				8E11D46328956BA700020411 /* view */,
 				8E11D44C28955B0700020411 /* AppDelegate.swift */,
 				8E11D44E28955B0700020411 /* SceneDelegate.swift */,
-				8E11D45028955B0700020411 /* ViewController.swift */,
 				8E11D45228955B0700020411 /* Main.storyboard */,
 				8E11D45828955B0C00020411 /* Assets.xcassets */,
 				8E11D45A28955B0C00020411 /* LaunchScreen.storyboard */,
@@ -68,6 +75,24 @@
 				8E11D45528955B0700020411 /* frist_project.xcdatamodeld */,
 			);
 			path = "frist-project";
+			sourceTree = "<group>";
+		};
+		8E11D46328956BA700020411 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8E11D46428956BE900020411 /* GredientView.swift */,
+				8E11D4692895CD7600020411 /* facebookBtn.swift */,
+				8E11D46B2895D60100020411 /* textfield.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8E11D4662895889500020411 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E11D467289588E500020411 /* SplashViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E11D45728955B0700020411 /* frist_project.xcdatamodeld in Sources */,
-				8E11D45128955B0700020411 /* ViewController.swift in Sources */,
 				8E11D44D28955B0700020411 /* AppDelegate.swift in Sources */,
+				8E11D46528956BE900020411 /* GredientView.swift in Sources */,
 				8E11D44F28955B0700020411 /* SceneDelegate.swift in Sources */,
+				8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */,
+				8E11D468289588E500020411 /* SplashViewController.swift in Sources */,
+				8E11D46C2895D60200020411 /* textfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
