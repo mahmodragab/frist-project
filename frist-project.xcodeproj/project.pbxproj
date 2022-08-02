@@ -17,6 +17,14 @@
 		8E11D468289588E500020411 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D467289588E500020411 /* SplashViewController.swift */; };
 		8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D4692895CD7600020411 /* facebookBtn.swift */; };
 		8E11D46C2895D60200020411 /* textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D46B2895D60100020411 /* textfield.swift */; };
+		8E81549F28981A1000F693AC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81549E28981A1000F693AC /* TableViewCell.swift */; };
+		8EA0E1E528972C1C00165BE5 /* storyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA0E1E428972C1C00165BE5 /* storyCell.swift */; };
+		8EE3DF7E289701FB00ED9AAF /* step1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF7D289701FB00ED9AAF /* step1VC.swift */; };
+		8EE3DF802897021100ED9AAF /* step2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF7F2897021100ED9AAF /* step2VC.swift */; };
+		8EE3DF822897024A00ED9AAF /* step3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF812897024A00ED9AAF /* step3VC.swift */; };
+		8EE3DF842897026A00ED9AAF /* step4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF832897026A00ED9AAF /* step4VC.swift */; };
+		8EE3DF862897028900ED9AAF /* login2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF852897028900ED9AAF /* login2VC.swift */; };
+		8EE3DF8928970F9600ED9AAF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF8828970F9600ED9AAF /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		8E11D467289588E500020411 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		8E11D4692895CD7600020411 /* facebookBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookBtn.swift; sourceTree = "<group>"; };
 		8E11D46B2895D60100020411 /* textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
+		8E81549E28981A1000F693AC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8EA0E1E428972C1C00165BE5 /* storyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCell.swift; sourceTree = "<group>"; };
+		8EE3DF7D289701FB00ED9AAF /* step1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step1VC.swift; sourceTree = "<group>"; };
+		8EE3DF7F2897021100ED9AAF /* step2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step2VC.swift; sourceTree = "<group>"; };
+		8EE3DF812897024A00ED9AAF /* step3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3VC.swift; sourceTree = "<group>"; };
+		8EE3DF832897026A00ED9AAF /* step4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step4VC.swift; sourceTree = "<group>"; };
+		8EE3DF852897028900ED9AAF /* login2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login2VC.swift; sourceTree = "<group>"; };
+		8EE3DF8828970F9600ED9AAF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,8 @@
 		8E11D44B28955B0700020411 /* frist-project */ = {
 			isa = PBXGroup;
 			children = (
+				8EA0E1E328972BE400165BE5 /* Cell */,
+				8EE3DF87289702FE00ED9AAF /* controllers main */,
 				8E11D4662895889500020411 /* Controllers */,
 				8E11D46328956BA700020411 /* view */,
 				8E11D44C28955B0700020411 /* AppDelegate.swift */,
@@ -91,8 +109,30 @@
 			isa = PBXGroup;
 			children = (
 				8E11D467289588E500020411 /* SplashViewController.swift */,
+				8EE3DF7D289701FB00ED9AAF /* step1VC.swift */,
+				8EE3DF7F2897021100ED9AAF /* step2VC.swift */,
+				8EE3DF812897024A00ED9AAF /* step3VC.swift */,
+				8EE3DF832897026A00ED9AAF /* step4VC.swift */,
+				8EE3DF852897028900ED9AAF /* login2VC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8EA0E1E328972BE400165BE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8EA0E1E428972C1C00165BE5 /* storyCell.swift */,
+				8E81549E28981A1000F693AC /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8EE3DF87289702FE00ED9AAF /* controllers main */ = {
+			isa = PBXGroup;
+			children = (
+				8EE3DF8828970F9600ED9AAF /* MainVC.swift */,
+			);
+			path = "controllers main";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,13 +206,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E81549F28981A1000F693AC /* TableViewCell.swift in Sources */,
+				8EE3DF822897024A00ED9AAF /* step3VC.swift in Sources */,
 				8E11D45728955B0700020411 /* frist_project.xcdatamodeld in Sources */,
 				8E11D44D28955B0700020411 /* AppDelegate.swift in Sources */,
 				8E11D46528956BE900020411 /* GredientView.swift in Sources */,
+				8EE3DF842897026A00ED9AAF /* step4VC.swift in Sources */,
 				8E11D44F28955B0700020411 /* SceneDelegate.swift in Sources */,
+				8EE3DF802897021100ED9AAF /* step2VC.swift in Sources */,
 				8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */,
 				8E11D468289588E500020411 /* SplashViewController.swift in Sources */,
+				8EA0E1E528972C1C00165BE5 /* storyCell.swift in Sources */,
+				8EE3DF862897028900ED9AAF /* login2VC.swift in Sources */,
+				8EE3DF7E289701FB00ED9AAF /* step1VC.swift in Sources */,
 				8E11D46C2895D60200020411 /* textfield.swift in Sources */,
+				8EE3DF8928970F9600ED9AAF /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

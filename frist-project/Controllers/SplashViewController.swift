@@ -27,7 +27,13 @@ class SplashViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func createaccountBtn(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "step1VC") as? step1VC else {return}
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
 }
 extension UIButton {
     func underline() {
