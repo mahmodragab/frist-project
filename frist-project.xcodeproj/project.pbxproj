@@ -22,7 +22,6 @@
 		8EE3DF7E289701FB00ED9AAF /* step1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF7D289701FB00ED9AAF /* step1VC.swift */; };
 		8EE3DF802897021100ED9AAF /* step2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF7F2897021100ED9AAF /* step2VC.swift */; };
 		8EE3DF822897024A00ED9AAF /* step3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF812897024A00ED9AAF /* step3VC.swift */; };
-		8EE3DF842897026A00ED9AAF /* step4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF832897026A00ED9AAF /* step4VC.swift */; };
 		8EE3DF862897028900ED9AAF /* login2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF852897028900ED9AAF /* login2VC.swift */; };
 		8EE3DF8928970F9600ED9AAF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF8828970F9600ED9AAF /* MainVC.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		8EE3DF7D289701FB00ED9AAF /* step1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step1VC.swift; sourceTree = "<group>"; };
 		8EE3DF7F2897021100ED9AAF /* step2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step2VC.swift; sourceTree = "<group>"; };
 		8EE3DF812897024A00ED9AAF /* step3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3VC.swift; sourceTree = "<group>"; };
-		8EE3DF832897026A00ED9AAF /* step4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step4VC.swift; sourceTree = "<group>"; };
 		8EE3DF852897028900ED9AAF /* login2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login2VC.swift; sourceTree = "<group>"; };
 		8EE3DF8828970F9600ED9AAF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +110,6 @@
 				8EE3DF7D289701FB00ED9AAF /* step1VC.swift */,
 				8EE3DF7F2897021100ED9AAF /* step2VC.swift */,
 				8EE3DF812897024A00ED9AAF /* step3VC.swift */,
-				8EE3DF832897026A00ED9AAF /* step4VC.swift */,
 				8EE3DF852897028900ED9AAF /* login2VC.swift */,
 			);
 			path = Controllers;
@@ -211,7 +208,6 @@
 				8E11D45728955B0700020411 /* frist_project.xcdatamodeld in Sources */,
 				8E11D44D28955B0700020411 /* AppDelegate.swift in Sources */,
 				8E11D46528956BE900020411 /* GredientView.swift in Sources */,
-				8EE3DF842897026A00ED9AAF /* step4VC.swift in Sources */,
 				8E11D44F28955B0700020411 /* SceneDelegate.swift in Sources */,
 				8EE3DF802897021100ED9AAF /* step2VC.swift in Sources */,
 				8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */,
