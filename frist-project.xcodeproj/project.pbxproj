@@ -17,6 +17,13 @@
 		8E11D468289588E500020411 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D467289588E500020411 /* SplashViewController.swift */; };
 		8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D4692895CD7600020411 /* facebookBtn.swift */; };
 		8E11D46C2895D60200020411 /* textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11D46B2895D60100020411 /* textfield.swift */; };
+		8E6E46A6289BF8DC0018B67D /* notificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E46A5289BF8DC0018B67D /* notificationsVC.swift */; };
+		8E6E46A8289BFA6E0018B67D /* notificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E46A7289BFA6E0018B67D /* notificationCell.swift */; };
+		8E7C0BBF289B18D400A22031 /* numberfollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C0BBE289B18D400A22031 /* numberfollowersView.swift */; };
+		8E7C0BC1289B1D7300A22031 /* friendRequestBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C0BC0289B1D7300A22031 /* friendRequestBtn.swift */; };
+		8E7C0BC3289B1F5F00A22031 /* name+DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C0BC2289B1F5F00A22031 /* name+DescriptionView.swift */; };
+		8E7C0BC5289B21EA00A22031 /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C0BC4289B21EA00A22031 /* profileVC.swift */; };
+		8E7C0BC7289B232800A22031 /* personalPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C0BC6289B232800A22031 /* personalPhotoCell.swift */; };
 		8E81549F28981A1000F693AC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81549E28981A1000F693AC /* TableViewCell.swift */; };
 		8EA0E1E528972C1C00165BE5 /* storyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA0E1E428972C1C00165BE5 /* storyCell.swift */; };
 		8EE3DF7E289701FB00ED9AAF /* step1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DF7D289701FB00ED9AAF /* step1VC.swift */; };
@@ -39,6 +46,13 @@
 		8E11D467289588E500020411 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		8E11D4692895CD7600020411 /* facebookBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookBtn.swift; sourceTree = "<group>"; };
 		8E11D46B2895D60100020411 /* textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
+		8E6E46A5289BF8DC0018B67D /* notificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsVC.swift; sourceTree = "<group>"; };
+		8E6E46A7289BFA6E0018B67D /* notificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationCell.swift; sourceTree = "<group>"; };
+		8E7C0BBE289B18D400A22031 /* numberfollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numberfollowersView.swift; sourceTree = "<group>"; };
+		8E7C0BC0289B1D7300A22031 /* friendRequestBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendRequestBtn.swift; sourceTree = "<group>"; };
+		8E7C0BC2289B1F5F00A22031 /* name+DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "name+DescriptionView.swift"; sourceTree = "<group>"; };
+		8E7C0BC4289B21EA00A22031 /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
+		8E7C0BC6289B232800A22031 /* personalPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalPhotoCell.swift; sourceTree = "<group>"; };
 		8E81549E28981A1000F693AC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8EA0E1E428972C1C00165BE5 /* storyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCell.swift; sourceTree = "<group>"; };
 		8EE3DF7D289701FB00ED9AAF /* step1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step1VC.swift; sourceTree = "<group>"; };
@@ -99,6 +113,9 @@
 				8E11D46428956BE900020411 /* GredientView.swift */,
 				8E11D4692895CD7600020411 /* facebookBtn.swift */,
 				8E11D46B2895D60100020411 /* textfield.swift */,
+				8E7C0BBE289B18D400A22031 /* numberfollowersView.swift */,
+				8E7C0BC0289B1D7300A22031 /* friendRequestBtn.swift */,
+				8E7C0BC2289B1F5F00A22031 /* name+DescriptionView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -120,6 +137,8 @@
 			children = (
 				8EA0E1E428972C1C00165BE5 /* storyCell.swift */,
 				8E81549E28981A1000F693AC /* TableViewCell.swift */,
+				8E7C0BC6289B232800A22031 /* personalPhotoCell.swift */,
+				8E6E46A7289BFA6E0018B67D /* notificationCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -128,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				8EE3DF8828970F9600ED9AAF /* MainVC.swift */,
+				8E7C0BC4289B21EA00A22031 /* profileVC.swift */,
+				8E6E46A5289BF8DC0018B67D /* notificationsVC.swift */,
 			);
 			path = "controllers main";
 			sourceTree = "<group>";
@@ -206,17 +227,24 @@
 				8E81549F28981A1000F693AC /* TableViewCell.swift in Sources */,
 				8EE3DF822897024A00ED9AAF /* step3VC.swift in Sources */,
 				8E11D45728955B0700020411 /* frist_project.xcdatamodeld in Sources */,
+				8E7C0BC3289B1F5F00A22031 /* name+DescriptionView.swift in Sources */,
+				8E7C0BC5289B21EA00A22031 /* profileVC.swift in Sources */,
+				8E6E46A8289BFA6E0018B67D /* notificationCell.swift in Sources */,
 				8E11D44D28955B0700020411 /* AppDelegate.swift in Sources */,
 				8E11D46528956BE900020411 /* GredientView.swift in Sources */,
 				8E11D44F28955B0700020411 /* SceneDelegate.swift in Sources */,
+				8E7C0BC1289B1D7300A22031 /* friendRequestBtn.swift in Sources */,
+				8E7C0BC7289B232800A22031 /* personalPhotoCell.swift in Sources */,
 				8EE3DF802897021100ED9AAF /* step2VC.swift in Sources */,
 				8E11D46A2895CD7600020411 /* facebookBtn.swift in Sources */,
 				8E11D468289588E500020411 /* SplashViewController.swift in Sources */,
 				8EA0E1E528972C1C00165BE5 /* storyCell.swift in Sources */,
 				8EE3DF862897028900ED9AAF /* login2VC.swift in Sources */,
+				8E7C0BBF289B18D400A22031 /* numberfollowersView.swift in Sources */,
 				8EE3DF7E289701FB00ED9AAF /* step1VC.swift in Sources */,
 				8E11D46C2895D60200020411 /* textfield.swift in Sources */,
 				8EE3DF8928970F9600ED9AAF /* MainVC.swift in Sources */,
+				8E6E46A6289BF8DC0018B67D /* notificationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

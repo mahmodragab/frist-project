@@ -22,8 +22,18 @@ class MainVC: UIViewController, UICollectionViewDataSource, UITableViewDataSourc
         tableView.dataSource = self
         tableView.delegate = self
 
-        // Do any additional setup after loading the view.
+      
     }
+    
+    
+    @IBAction func profileBtn(_ sender: Any) {
+        let storybord = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storybord.instantiateViewController(withIdentifier: "profileVC") as? profileVC else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
     func configureLayout() -> UICollectionViewCompositionalLayout {
         let sizeItem = NSCollectionLayoutSize(widthDimension: .absolute(90), heightDimension: .absolute(90))
         let item = NSCollectionLayoutItem(layoutSize: sizeItem)
