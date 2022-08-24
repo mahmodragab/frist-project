@@ -10,7 +10,10 @@ import UIKit
 class storyCell: UICollectionViewCell {
     static let reuseIdentifire = String(describing: storyCell.self)
     
-    @IBOutlet weak var storyBtn: UIButton!
+
+    @IBOutlet weak var storyNameLbl: UILabel!
     
     @IBOutlet weak var storyImage: UIImageView!
+    
+    
 }

@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.5.0)
+  - SwiftLoader (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftLoader
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftLoader
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  SwiftLoader: f12f3a6fb42576862a3a5eb80c7e59fc881b6982
+
+PODFILE CHECKSUM: 0106d4f9fd84cce72c123ec17926a5ee4bef8c3a
+
+COCOAPODS: 1.11.2

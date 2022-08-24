@@ -10,14 +10,30 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+      
+        //MARK: check user is login or not
+        // get data from user defautl
+//        if let savedUser = defaults.object(forKey: "SavedDataResponse") as? Data {
+//            let decoder = JSONDecoder()
+//            if let userInfo = try? decoder.decode(UserInfo.self, from: savedUser) {
+        
+        // check if userInfo model not equal nil -> user is login else user not login
+        // login -> homeViewController
+        // not login -> createAccountViewController
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//
+//        let rootController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainViewController")
+//        self.window?.rootViewController = rootController
+//                 }
+//          }
         return true
     }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

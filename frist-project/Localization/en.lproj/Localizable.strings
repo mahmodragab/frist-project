@@ -1,0 +1,51 @@
+"textLbl" = "By tapping Continue,Create account, I agree ";
+"textLBL" = "to Company's Terms of Service, Payments Terms of Service,Privacy Policy,and Non discrimination Policy. ";
+"loginBtn" = "Log in ";
+"haveAccLbl" = "Have an account already? ";
+"welcomeLbl" = "Welcome to Company.";
+"facebookLbl" = "Continue with Facebook ";
+"createAccBtn" = "Create Account ";
+
+
+"whatYNLbl" = "What's your name ? ";
+"FristNameTF" = "Frist Name";
+"LastNameTF" = "Last Name ";
+"errorFristLB" = "Error Massage";
+"errorLastLB" = "Error Massage ";
+"NextBTN" = "Next ";
+"invalid frist Name Address" = "invalid frist Name Address";
+"invalid last Name Address" = "invalid last Name Address";
+
+
+"whatEmailLbl" = "What's your email?";
+"emailTF" = "yourname@company.com";
+"errorLB" = "Error Massage";
+"nextBtn" = "Next ";
+"Invalid Email Address" = "Invalid Email Address";
+
+
+"createPassLbl" = "Create a password ";
+"MessageLbl" = "Your password must include at least one symbol and be 8 or more characters long. ";
+"passwordTF" = "password";
+"rePasswordTF" = "Re.Type Password ";
+"passErrorLbl" = "Error Massage";
+"rePassErrorLbl" = "Error Massage ";
+"nextBtn" = "Next ";
+"Password must be at least 8 characters" = "Password must be at least 8 characters";
+"Password must contain at least 1 digit" = "Password must contain at least 1 digit";
+"Password must contain at least 1 lowercase character" = "Password must contain at least 1 lowercase character ";
+"Password must contain at least 1 uppercase character" = "Password must contain at least 1 uppercase character ";
+
+
+"loginLbl" = "Login ";
+"emailTF" = "Email ";
+"passwordTF" = "Password";
+"emailErrorLbl" = "Error Massage";
+"passwordErorrLbl" = "Error Massage";
+"forgotpassBtn" = "Forgot password? ";
+"DonthaveLbl" = "Don't have an account? ";
+"LogInBtn" = "Log In";
+"signUpBtn" = "Sign up";
+"Invalid Email Address" = "Invalid Email Address";
+
+

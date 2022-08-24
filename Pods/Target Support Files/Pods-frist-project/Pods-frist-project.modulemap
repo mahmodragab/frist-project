@@ -1,0 +1,6 @@
+module Pods_frist_project {
+  umbrella header "Pods-frist-project-umbrella.h"
+
+  export *
+  module * { export * }
+}

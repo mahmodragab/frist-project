@@ -1,0 +1,50 @@
+"textLbl" = "من خلال النقر فوق متابعة ، إنشاء حساب ، أوافق ";
+"textLBL" = "لشروط خدمة الشركة ، وشروط خدمة المدفوعات ، وسياسة الخصوصية ، وسياسة عدم التمييز. ";
+"loginBtn" = "تسجيل الدخول ";
+"haveAccLbl" = "لديك حساب بالفعل؟ ";
+"welcomeLbl" = "مرحبا بكم في الشركة.";
+"facebookLbl" = "تواصل مع الفيسبوك ";
+"createAccBtn" = "إصنع حساب ";
+
+
+"whatYNLbl" = "ما اسمك ؟ ";
+"FristNameTF" = "الاسم الاول";
+"LastNameTF" = "اللقب ";
+"errorFristLB" = "رسالة خطأ";
+"errorLastLB" = "رسالة خطأ ";
+"NextBTN" = "التالي";
+"invalid frist Name Address" = "عنوان الاسم الأول غير صالح";
+"invalid last Name Address" = "عنوان الاسم الأخير غير صالح";
+
+
+"whatEmailLbl" = "ما هو بريدك الإلكتروني؟";
+"emailTF" = "اسمك @ الشركة. كوم";
+"errorLB" = "رسالة خطأ ";
+"nextBtn" = "التالي";
+"Invalid Email Address" = "عنوان البريد الإلكتروني غير صالح";
+
+
+"createPassLbl" = "إنشاء كلمة مرور ";
+"MessageLbl" = "يجب أن تتضمن كلمة المرور الخاصة بك رمزًا واحدًا على الأقل وأن تتكون من 8 أحرف أو أكثر.";
+"passwordTF" = "كلمه السر";
+"rePasswordTF" = "اعد ادخال كلمة المرور ";
+"passErrorLbl" =  "رسالة خطأ ";
+"rePassErrorLbl" =  "رسالة خطأ ";
+"nextBtn" = "التالي";
+"Password must be at least 8 characters" = "يجب أن تكون كلمة المرور 8 أحرف على الأقل";
+"Password must contain at least 1 digit" = "يجب أن تحتوي كلمة المرور على رقم واحد على الأقل";
+"Password must contain at least 1 lowercase character" = "يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل ";
+"Password must contain at least 1 uppercase character" = "يجب أن تحتوي كلمة المرور على حرف واحد كبير على الأقل ";
+
+
+"loginLbl" = "تسجيل الدخول ";
+"emailTF" = "البريد الإلكتروني ";
+"passwordTF" = "كلمة المرور";
+"emailErrorLbl" = "رسالة خطأ ";
+"passwordErorrLbl" = "رسالة خطأ ";
+"forgotpassBtn" = "هل نسيت كلمة السر؟ ";
+"DonthaveLbl" = "ليس لديك حساب؟ ";
+"LogInBtn" = "تسجيل الدخول";
+"signUpBtn" = "اشتراك";
+"Invalid Email Address" = "عنوان البريد الإلكتروني غير صالح";
+
