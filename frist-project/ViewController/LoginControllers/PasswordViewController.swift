@@ -181,7 +181,7 @@ class PasswordViewController: UIViewController {
         Register(model: model) { [self] response in
             switch response {
             case .success(let msg):
-                AlertMessage.showMessage(message: msg, title: "success", on: self) {  (_) -> Void in
+                AlertMessage.showMessage(message: msg , title: "success", on: self) {  (_) -> Void in
                     navigateToLoginViewController()
                 }
             case .failure(let error):

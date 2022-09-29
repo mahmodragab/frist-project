@@ -16,6 +16,10 @@ class MainViewController: UIViewController,UICollectionViewDelegate, UICollectio
     var listofPosts: [Info]? = []
     var listofStatus: [Status]? = []
     
+    @IBOutlet weak var LogOutBtn: UIButton!
+    @IBOutlet weak var logoLbl: UILabel!
+    @IBOutlet weak var recomLbl: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -58,6 +62,15 @@ class MainViewController: UIViewController,UICollectionViewDelegate, UICollectio
                 AlertMessage.showMessage(message: "There was an error getting status", title: "ERROR", on: self)
             }
         }
+        
+        localization()
+    }
+    
+    func localization() {
+        self.LogOutBtn.titleLabel?.text = NSLocalizedString("LogOutBtn", comment: "")
+        self.logoLbl.text = NSLocalizedString("logoLbl", comment: "")
+        self.recomLbl.text = NSLocalizedString("recomLbl", comment: "")
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

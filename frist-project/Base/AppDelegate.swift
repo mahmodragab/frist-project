@@ -13,25 +13,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
+    let defaults = UserDefaults.standard
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       
         //MARK: check user is login or not
-        // get data from user defautl
-//        if let savedUser = defaults.object(forKey: "SavedDataResponse") as? Data {
-//            let decoder = JSONDecoder()
-//            if let userInfo = try? decoder.decode(UserInfo.self, from: savedUser) {
+
+        Localizer.DoLangaueExchange()
         
-        // check if userInfo model not equal nil -> user is login else user not login
-        // login -> homeViewController
-        // not login -> createAccountViewController
-//            self.window = UIWindow(frame: UIScreen.main.bounds)
 //
-//        let rootController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MainViewController")
-//        self.window?.rootViewController = rootController
-//                 }
-//          }
+//        if defaults.bool(forKey: "IsFirstUse") == false {
+//            Language.setAppLanguage(language: "en")
+//            defaults.set(true, forKey: "IsFirstUse")
+//        }
+//
+//        Language.setAppLanguage(language: Language.currentLanguage())
+
+        
         return true
     }
     // MARK: UISceneSession Lifecycle

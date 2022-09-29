@@ -40,8 +40,8 @@ class UserInfoViewController: UIViewController {
     func resetForm() {
         NextBTN.isEnabled = false
         
-        errorFristLB.isHidden = false
-        errorLastLB.isHidden = false
+        errorFristLB.isHidden = true
+        errorLastLB.isHidden = true
         
         errorFristLB.text = ""
         errorLastLB.text = ""

@@ -37,6 +37,7 @@
 "Password must contain at least 1 uppercase character" = "يجب أن تحتوي كلمة المرور على حرف واحد كبير على الأقل ";
 
 
+
 "loginLbl" = "تسجيل الدخول ";
 "emailTF" = "البريد الإلكتروني ";
 "passwordTF" = "كلمة المرور";
@@ -48,3 +49,8 @@
 "signUpBtn" = "اشتراك";
 "Invalid Email Address" = "عنوان البريد الإلكتروني غير صالح";
 
+
+"LogOutBtn" = "تسجيل خروج ";
+"logoLbl" = "شعار ";
+"recomLbl" = "التوصيات";
+"nameLbl" = "شاكير";

@@ -37,6 +37,7 @@
 "Password must contain at least 1 uppercase character" = "Password must contain at least 1 uppercase character ";
 
 
+
 "loginLbl" = "Login ";
 "emailTF" = "Email ";
 "passwordTF" = "Password";
@@ -47,5 +48,12 @@
 "LogInBtn" = "Log In";
 "signUpBtn" = "Sign up";
 "Invalid Email Address" = "Invalid Email Address";
+
+
+"LogOutBtn" = "Log Out ";
+"logoLbl" = "Logo ";
+"recomLbl" = "Recommendations";
+"nameLbl" = "shakira shakira";
+
 
 

@@ -23,11 +23,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0N-yg-j7H">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="646.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-zF-e85">
-                                                <rect key="frame" x="329" y="20" width="60" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-zF-e85">
+                                                <rect key="frame" x="173" y="20" width="59" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="QID-QH-8kh"/>
-                                                    <constraint firstAttribute="width" constant="60" id="zEl-X8-F14"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -39,9 +38,8 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account already? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7V-Bf-xhY">
-                                                <rect key="frame" x="191" y="24.5" width="148" height="21"/>
+                                                <rect key="frame" x="35" y="24.5" width="148" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="148" id="7cy-HL-Fse"/>
                                                     <constraint firstAttribute="height" constant="21" id="LJ1-eW-13D"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
@@ -89,7 +87,7 @@
                                                     <action selector="createaccountBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfC-oR-eKj"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping Continue,Create account, I agree " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wr-X3-OpF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping Continue,Create account, I agree " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wr-X3-OpF">
                                                 <rect key="frame" x="35" y="507" width="344" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,14 +100,14 @@
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" size="14" name="Avenir-Book"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="Terms of Service, Payments Terms of Service,Privacy Policy,and Non discrimination Policy.">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" size="14" name="Avenir-Book"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             <integer key="NSUnderline" value="1"/>
                                                         </attributes>
                                                     </fragment>
@@ -127,12 +125,12 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="x6k-zF-e85" secondAttribute="trailing" constant="25" id="9aR-xG-6Me"/>
                                             <constraint firstItem="VNM-nd-gRA" firstAttribute="leading" secondItem="v0N-yg-j7H" secondAttribute="leading" constant="35" id="BTp-3j-tbF"/>
                                             <constraint firstItem="L2q-We-Vwa" firstAttribute="leading" secondItem="v0N-yg-j7H" secondAttribute="leading" constant="35" id="CSR-4u-P9j"/>
                                             <constraint firstAttribute="bottom" secondItem="8wr-X3-OpF" secondAttribute="bottom" constant="120" id="Dvr-IW-XTS"/>
                                             <constraint firstItem="x6k-zF-e85" firstAttribute="leading" secondItem="t7V-Bf-xhY" secondAttribute="trailing" constant="-10" id="JjZ-8O-47Y"/>
                                             <constraint firstAttribute="trailing" secondItem="8wr-X3-OpF" secondAttribute="trailing" constant="35" id="Jny-YJ-AhX"/>
+                                            <constraint firstItem="t7V-Bf-xhY" firstAttribute="leading" secondItem="v0N-yg-j7H" secondAttribute="leading" constant="35" id="Qtq-rl-dA4"/>
                                             <constraint firstItem="8wr-X3-OpF" firstAttribute="top" secondItem="jvk-JH-ZJM" secondAttribute="bottom" constant="40" id="UCf-CY-ZaJ"/>
                                             <constraint firstItem="kek-ff-7oe" firstAttribute="leading" secondItem="Y4S-Wj-tde" secondAttribute="leading" id="VHc-OG-2FR"/>
                                             <constraint firstAttribute="trailing" secondItem="jvk-JH-ZJM" secondAttribute="trailing" constant="35" id="WGE-xW-Zth"/>
@@ -216,7 +214,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iHl-yt-4K0">
                                                 <rect key="frame" x="35" y="244.5" width="344" height="148"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Frist Name" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-5N-IWb" customClass="textfield" customModule="frist_project" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Frist Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-5N-IWb" customClass="textfield" customModule="frist_project" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="344" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="51" id="75B-qS-pzo"/>
@@ -233,7 +231,7 @@
                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-dT-wxT" customClass="textfield" customModule="frist_project" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-dT-wxT" customClass="textfield" customModule="frist_project" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="76" width="344" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="51" id="Iz1-uV-5WM"/>
@@ -605,7 +603,7 @@ symbol and be 8 or more characters long.</string>
                                                     <constraint firstItem="Zz7-hN-XFu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="X2s-DJ-3bC" secondAttribute="bottom" constant="17" id="2d2-Go-NGa"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mt9-bw-EAg">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mt9-bw-EAg">
                                                 <rect key="frame" x="342" y="267.5" width="27" height="19"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glE-Zc-Ugy">
@@ -622,7 +620,7 @@ symbol and be 8 or more characters long.</string>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-y3-bmH">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-y3-bmH">
                                                 <rect key="frame" x="342" y="335.5" width="27" height="19"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6z-Ds-ly1">
@@ -645,15 +643,19 @@ symbol and be 8 or more characters long.</string>
                                             <constraint firstItem="d2o-Gd-jMN" firstAttribute="leading" secondItem="gvB-S8-iQv" secondAttribute="leading" constant="35" id="E6v-W1-025"/>
                                             <constraint firstItem="PGb-LB-s1x" firstAttribute="leading" secondItem="gvB-S8-iQv" secondAttribute="leading" constant="35" id="Fc2-wZ-Gnt"/>
                                             <constraint firstItem="jIZ-pE-bmn" firstAttribute="leading" secondItem="gvB-S8-iQv" secondAttribute="leading" constant="35" id="b4j-LD-qJp"/>
+                                            <constraint firstItem="Cb8-y3-bmH" firstAttribute="centerY" secondItem="cw9-OR-GfR" secondAttribute="centerY" id="bs2-I1-Z0P"/>
                                             <constraint firstAttribute="trailing" secondItem="Cfv-LK-LbX" secondAttribute="trailing" constant="35" id="dz9-Y8-yGn"/>
                                             <constraint firstItem="Cfv-LK-LbX" firstAttribute="leading" secondItem="gvB-S8-iQv" secondAttribute="leading" constant="35" id="efT-7M-0KO"/>
+                                            <constraint firstItem="Cb8-y3-bmH" firstAttribute="trailing" secondItem="cw9-OR-GfR" secondAttribute="trailing" constant="-10" id="fA8-Pi-Od1"/>
                                             <constraint firstItem="d2o-Gd-jMN" firstAttribute="top" secondItem="Cfv-LK-LbX" secondAttribute="bottom" constant="20" id="fa6-RT-QB8"/>
                                             <constraint firstAttribute="trailing" secondItem="PGb-LB-s1x" secondAttribute="trailing" constant="35" id="hIg-m5-t5W"/>
                                             <constraint firstItem="PGb-LB-s1x" firstAttribute="top" secondItem="d2o-Gd-jMN" secondAttribute="bottom" constant="200" id="mhu-ya-dx5"/>
                                             <constraint firstAttribute="trailing" secondItem="jIZ-pE-bmn" secondAttribute="trailing" constant="35" id="qt7-fV-2X8"/>
                                             <constraint firstAttribute="trailing" secondItem="d2o-Gd-jMN" secondAttribute="trailing" constant="35" id="s14-cd-2lp"/>
                                             <constraint firstItem="Cfv-LK-LbX" firstAttribute="top" secondItem="jIZ-pE-bmn" secondAttribute="bottom" constant="27" id="uVu-bK-1tt"/>
+                                            <constraint firstItem="Mt9-bw-EAg" firstAttribute="trailing" secondItem="X2s-DJ-3bC" secondAttribute="trailing" constant="-10" id="ugB-Ei-Vno"/>
                                             <constraint firstAttribute="bottom" secondItem="PGb-LB-s1x" secondAttribute="bottom" constant="60" id="w4J-SQ-3B1"/>
+                                            <constraint firstItem="Mt9-bw-EAg" firstAttribute="centerY" secondItem="X2s-DJ-3bC" secondAttribute="centerY" id="wsE-Ma-rIw"/>
                                             <constraint firstItem="jIZ-pE-bmn" firstAttribute="top" secondItem="gvB-S8-iQv" secondAttribute="top" constant="110" id="yWo-OV-AfC"/>
                                         </constraints>
                                     </view>
@@ -830,7 +832,7 @@ symbol and be 8 or more characters long.</string>
                                                 <rect key="frame" x="0.0" y="446.5" width="414" height="110"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYI-vE-92j">
-                                                        <rect key="frame" x="190.5" y="10" width="72" height="21"/>
+                                                        <rect key="frame" x="180.5" y="10" width="72" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="uJo-m7-Hvl"/>
                                                         </constraints>
@@ -854,7 +856,7 @@ symbol and be 8 or more characters long.</string>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="WYI-vE-92j" firstAttribute="trailing" secondItem="Orj-iC-zeV" secondAttribute="trailing" constant="70" id="1Ij-gV-Yx3"/>
+                                                    <constraint firstItem="WYI-vE-92j" firstAttribute="trailing" secondItem="Orj-iC-zeV" secondAttribute="trailing" constant="60" id="1Ij-gV-Yx3"/>
                                                     <constraint firstItem="WYI-vE-92j" firstAttribute="centerY" secondItem="Orj-iC-zeV" secondAttribute="centerY" id="RbS-Vg-PjY"/>
                                                     <constraint firstItem="Orj-iC-zeV" firstAttribute="leading" secondItem="6Ku-5n-ZOE" secondAttribute="leading" constant="45" id="j4T-4y-jE0"/>
                                                     <constraint firstItem="Orj-iC-zeV" firstAttribute="top" secondItem="6Ku-5n-ZOE" secondAttribute="top" constant="10" id="rgG-JN-dqS"/>
@@ -958,10 +960,9 @@ symbol and be 8 or more characters long.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eg-Ff-2jJ">
-                                        <rect key="frame" x="19" y="81" width="80" height="30"/>
+                                        <rect key="frame" x="19" y="81" width="126.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="3EZ-vV-TeB"/>
-                                            <constraint firstAttribute="width" constant="80" id="JU7-pp-eFT"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -997,6 +998,7 @@ symbol and be 8 or more characters long.</string>
                                     <constraint firstAttribute="bottom" secondItem="6eg-Ff-2jJ" secondAttribute="bottom" constant="14" id="5rs-tH-aLt"/>
                                     <constraint firstAttribute="height" constant="125" id="EbP-kq-xmZ"/>
                                     <constraint firstAttribute="bottom" secondItem="fJL-Cf-eZV" secondAttribute="bottom" constant="14" id="Icg-Rx-UUE"/>
+                                    <constraint firstItem="fJL-Cf-eZV" firstAttribute="leading" secondItem="6eg-Ff-2jJ" secondAttribute="trailing" constant="30" id="Ire-DG-SA7"/>
                                     <constraint firstItem="6eg-Ff-2jJ" firstAttribute="leading" secondItem="WDB-8A-io0" secondAttribute="leading" constant="19" id="Kpn-zp-lka"/>
                                     <constraint firstAttribute="trailing" secondItem="dmp-gf-aTW" secondAttribute="trailing" constant="19" id="lRw-QL-4jL"/>
                                     <constraint firstItem="fJL-Cf-eZV" firstAttribute="centerX" secondItem="WDB-8A-io0" secondAttribute="centerX" id="nCi-EM-AhW"/>
@@ -1189,7 +1191,10 @@ symbol and be 8 or more characters long.</string>
                     <tabBarItem key="tabBarItem" title="Item" id="MoC-IU-VSd"/>
                     <navigationItem key="navigationItem" id="eh0-og-4tf"/>
                     <connections>
+                        <outlet property="LogOutBtn" destination="6eg-Ff-2jJ" id="WvN-PO-ZNv"/>
                         <outlet property="collectionView" destination="TIZ-sQ-clz" id="JUQ-Vb-q1d"/>
+                        <outlet property="logoLbl" destination="fJL-Cf-eZV" id="kfO-st-VQL"/>
+                        <outlet property="recomLbl" destination="Toq-ib-90h" id="ieC-yw-s0O"/>
                         <outlet property="tableView" destination="WDp-qX-J9s" id="ecb-id-z6q"/>
                     </connections>
                 </viewController>
@@ -1462,9 +1467,12 @@ symbol and be 8 or more characters long.</string>
                                                         </constraints>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Friend Request">
+                                                        <buttonConfiguration key="configuration" style="plain" title="">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="changeLanguageTapped:" destination="7xH-Ym-T5b" eventType="touchUpInside" id="XHO-3U-bSJ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1654,6 +1662,7 @@ shopping on weekends  </string>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="Group 14" systemItem="topRated" id="atf-US-6rA"/>
                     <connections>
+                        <outlet property="btnChangeLanguage" destination="0XR-TL-guo" id="ZHc-Lt-bb4"/>
                         <outlet property="collectionView" destination="96d-a4-gte" id="ERO-I4-xav"/>
                     </connections>
                 </viewController>
