@@ -9,19 +9,16 @@ import UIKit
 
 class NotificationsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // MARK: - IBOutlet -
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - LifeCycle -
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-       
-    }
-    
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section Name"
         
     }
     
@@ -48,5 +45,9 @@ class NotificationsViewController: UIViewController, UITableViewDataSource, UITa
         
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section Name"
+        
+    }
 
 }

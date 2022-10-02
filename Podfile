@@ -5,5 +5,7 @@ target 'frist-project' do
   
 pod 'Alamofire'
 pod 'SwiftLoader'
+pod 'Moya', '~> 15.0'
+
 
 end

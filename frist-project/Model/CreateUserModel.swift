@@ -14,5 +14,4 @@ struct CreateUserModel: Codable {
     var email: String?
     var password: String?
     
-    
 }

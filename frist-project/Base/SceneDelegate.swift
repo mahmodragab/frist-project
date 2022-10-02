@@ -11,16 +11,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let defaults = UserDefaults.standard
 
     var window: UIWindow?
-    
+
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-    
+
         if defaults.object(forKey: "SavedDataResponse") != nil {
             showMainViewController(scene: scene)
         } else {
             showIntroViewController(scene: scene)
         }
-        
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -53,15 +53,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-    func showMainViewController(scene: UIScene){
+    func showMainViewController(scene: UIScene) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        guard let rootController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else { return }
+        guard let rootController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabeBarMainViewController") as? TabeBarMainViewController else { return }
         self.window?.rootViewController = UINavigationController(rootViewController: rootController)
         self.window?.makeKeyAndVisible()
     }
     
-    func showIntroViewController(scene: UIScene){
+    func showIntroViewController(scene: UIScene) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
         guard let rootController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroViewController") as? IntroViewController else { return }

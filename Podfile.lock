@@ -1,20 +1,27 @@
 PODS:
   - Alamofire (5.5.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - SwiftLoader (1.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Moya (~> 15.0)
   - SwiftLoader
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Moya
     - SwiftLoader
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   SwiftLoader: f12f3a6fb42576862a3a5eb80c7e59fc881b6982
 
-PODFILE CHECKSUM: 0106d4f9fd84cce72c123ec17926a5ee4bef8c3a
+PODFILE CHECKSUM: 0b3b3634605c453d493fb1fb40ce798979c10809
 
 COCOAPODS: 1.11.2

@@ -19,16 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       
         //MARK: check user is login or not
-
         Localizer.DoLangaueExchange()
-        
+        LanguageManager.changeLanguage(lang: LanguageManager.language)
+
+
 //
 //        if defaults.bool(forKey: "IsFirstUse") == false {
 //            Language.setAppLanguage(language: "en")
 //            defaults.set(true, forKey: "IsFirstUse")
 //        }
 //
-//        Language.setAppLanguage(language: Language.currentLanguage())
 
         
         return true

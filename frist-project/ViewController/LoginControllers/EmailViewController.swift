@@ -8,38 +8,92 @@
 import UIKit
 
 class EmailViewController: UIViewController {
-    
+
+    // MARK: - IBOutlets -
 
     @IBOutlet weak var whatEmailLbl: UILabel!
-    @IBOutlet weak var emailTF: textfield!
+    @IBOutlet weak var emailTF: ManageTextField!
     @IBOutlet weak var errorLB: UILabel!
     @IBOutlet weak var nextBtn: facebookBtn!
 
+    // MARK: - Variables -
+
     var model = CreateUserModel()
-    
+    var viewModel = EmailViewModel()
+
+    // MARK: - LifeCycle -
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        localization()
-        
+        setlocalization()
         print("user model \(createEmailModel().fristName) \(createEmailModel().lastname)")
-        resetForm()
+        setDefaultState()
         self.emailTF.delegate = self
+        
+        viewModel.isValidEmail.bind{ (msg , isValid) in
+            if isValid ?? false {
+                self.errorLB.text = msg
+                self.errorLB.isHidden = true
+            } else {
+                self.errorLB.text = msg
+                self.errorLB.isHidden = false
+            }
+        }
     }
-    
-    func localization() {
+
+    // MARK: - IBActions -
+
+    @IBAction func emailChanged(_ sender: Any) {
+        if let email = emailTF.text {
+            viewModel.invalidEmail(email)
+        }
+        checkForValidForm()
+    }
+
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
+    @IBAction func nextBtn(_ sender: Any) {
+        setDefaultState()
+        navigateToPasswordViewController()
+
+    }
+
+}
+
+// MARK: - UITextFieldDelegate -
+
+extension EmailViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTF {
+            return emailTF.resignFirstResponder()
+        }
+        return false
+    }
+}
+
+//MARK: - Helpers Functions -
+
+extension EmailViewController {
+
+    func setlocalization() {
         self.whatEmailLbl.text = NSLocalizedString("whatEmailLbl", comment: "")
         self.emailTF.placeholder = NSLocalizedString("emailTF", comment: "")
         self.errorLB.text = NSLocalizedString("errorLB", comment: "")
-        self.nextBtn.titleLabel?.text = NSLocalizedString("nextBtn", comment: "")
+        self.nextBtn.setTitle(NSLocalizedString("nextBtn", comment: ""), for: .normal)
     }
-    
-    func resetForm() {
+
+    func setDefaultState() {
         nextBtn.isEnabled = false
-        
         errorLB.text = ""
     }
-    
+
     func checkForValidForm() {
         if errorLB.isHidden {
             nextBtn.isEnabled = true
@@ -47,66 +101,15 @@ class EmailViewController: UIViewController {
             nextBtn.isEnabled = false
         }
     }
-    func createEmailModel() -> CreateUserModel{
+    func createEmailModel() -> CreateUserModel {
         model.email = emailTF.text ?? ""
         return model
     }
-    
+
     func navigateToPasswordViewController() {
         let storybord = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storybord.instantiateViewController(withIdentifier: "PasswordViewController") as? PasswordViewController else { return }
-                vc.model = createEmailModel()
-                self.navigationController?.pushViewController(vc, animated: true)
+        vc.model = createEmailModel()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    @IBAction func nextBtn(_ sender: Any) {
-        resetForm()
-        navigateToPasswordViewController()
-
-    }
-    
-    func invalidEmail(_ value: String) -> String? {
-        let reqularExpression = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", reqularExpression)
-        if !predicate.evaluate(with: value) {
-            return NSLocalizedString("Invalid Email Address", comment: "")
-        }
-        return nil
-    }
-    
-    @IBAction func emailChanged(_ sender: Any) {
-        if let email = emailTF.text {
-            if let errorMessage = invalidEmail(email) {
-                errorLB.text = errorMessage
-                errorLB.isHidden = false
-            } else {
-                errorLB.isHidden = true
-            }
-        }
-        checkForValidForm()
-    }
-    
-    @IBAction func backBtn(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-}
-
-extension EmailViewController: UITextFieldDelegate {
-   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//      let nextTag = textField.tag + 1
-//       let nextTF = textField.superview?.viewWithTag(nextTag) as UIResponder?
-      if textField == emailTF {
-//        return LastNameTF.becomeFirstResponder()
-//      } else {
-         return emailTF.resignFirstResponder()
-//      }
-//      return false
-   }
-       return false
-}
 }
