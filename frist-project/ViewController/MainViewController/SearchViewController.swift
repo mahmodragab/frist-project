@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 class SearchViewController: UIViewController {
-    
+
     // MARK: - Variables -
 
     let data = ["Mahmod", "Abdallah", "Ahmed", "Youssef", "Leen", "Elsayed", "Omar"]
@@ -19,35 +19,36 @@ class SearchViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchCollectionView: UICollectionView!
-    
+
     // MARK: - Lifecycle -
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         filterData = data
         searchCollectionView.dataSource = self
         searchBar.delegate = self
     }
-    
+
 }
 
 // MARK: - CollectionViewDataSource -
 
-extension SearchViewController : UICollectionViewDataSource{
-    
+extension SearchViewController: UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filterData.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: searchCollectionViewCell.reuseIdentifire, for: indexPath) as? searchCollectionViewCell else {fatalError()}
+
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: searchCollectionViewCell.reuseIdentifire, for: indexPath) as? searchCollectionViewCell else { fatalError() }
         cell.nameSearchLbl.text = filterData[indexPath.row]
         cell.searchImg.makeCurved()
-        
+
         return cell
+
     }
 }
-
 // MARK: - SearchBarDelegate -
 
 extension SearchViewController: UISearchBarDelegate {
@@ -56,9 +57,9 @@ extension SearchViewController: UISearchBarDelegate {
         if searchText == "" {
             filterData = data
         }
-        
+
         for word in data {
-            if word.uppercased().contains(searchText.uppercased()){
+            if word.uppercased().contains(searchText.uppercased()) {
                 filterData.append(word)
             }
         }

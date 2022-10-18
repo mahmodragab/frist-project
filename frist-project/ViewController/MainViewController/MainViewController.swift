@@ -10,9 +10,7 @@ import Alamofire
 import SwiftLoader
 
 
-class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegateFlowLayout {
-
-
+class MainViewController: UIViewController {
 
     // MARK: - IBOutlet -
 
@@ -29,7 +27,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var model = CreateUserModel()
     let defaults = UserDefaults.standard
     var listofPosts = Box<[Info]?>(value: [])
-
+    
 //    var listofPosts: [Info]? = []
     var listofStatus: [Status]? = []
     var viewModel = MainViewModel()
@@ -40,7 +38,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewWillAppear(animated)
         viewModel.posts()
         viewModel.status()
-        
+
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
@@ -57,7 +55,6 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         tableView.dataSource = self
         tableView.delegate = self
 
-        
         viewModel.postsResponse.bind { response in
             if let post = response {
                 SwiftLoader.show(title: "Loading...", animated: true)
@@ -70,7 +67,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 AlertMessage.showMessage(message: "There was an error getting posts ", title: "ERORR", on: self)
             }
         }
-        
+
         viewModel.statusResponse.bind { response in
             if let status = response {
                 SwiftLoader.show(title: "Loading...", animated: true)
@@ -83,11 +80,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 AlertMessage.showMessage(message: "There was an error getting status", title: "ERROR", on: self)
             }
         }
-        
-
         setlocalization()
     }
-
 
     // MARK: - IBAction -
 
@@ -104,9 +98,11 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBAction func BackBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+}
 
     // MARK: - Data source for collection View -
-
+extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return listofStatus?.count ?? 0
     }
@@ -161,7 +157,6 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             }
         }
     }
-
 
 
     func saveImage(imgData: Data) {
@@ -219,7 +214,7 @@ extension UIImageView {
         layer.cornerRadius = self.frame.width / 2
         clipsToBounds = true
     }
-    
+
     func makeCurved() {
         layer.borderWidth = 1
         layer.masksToBounds = false

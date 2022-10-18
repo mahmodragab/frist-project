@@ -60,7 +60,7 @@ class TableViewCell: UITableViewCell {
     }
 
     @IBAction func deleteBtnTapped(_ sender: Any) {
-        // call api  with id  object in list and refresh list
+        // call api  with id object in list and refresh list
         delegate?.deleteBtn(model: self.model)
     }
 
